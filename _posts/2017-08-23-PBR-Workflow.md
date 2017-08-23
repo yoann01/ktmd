@@ -7,8 +7,7 @@ categories:
 ---
 # PBR Spec/Rough and Rough/Metal Workflow
 
-![Metalness](https://meshlogic.github.io/posts/blender/materials/nodes-pbr-basic-shader/pbr_maps.png){:class="img-responsive"}
-
+{% include image name="https://www.marmoset.co/wp-content/uploads/2014/01/metalness02.jpg" caption=" blah " %}
 
 ## Metal Rough Worfkow
 
@@ -36,7 +35,7 @@ Also, with metal/rough, you only have control over metal reflectance values. The
 
 ## Specular Glossiness Workflow
 
-{% include image name="linkedin-before.png" caption="Sharing my blog on LinkedIn" %}
+
 
 ### Diffuse 
 
