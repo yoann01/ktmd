@@ -1,7 +1,7 @@
 ﻿---
 layout: post
-title: PBR workflow
-tags: [code, jekyll]
+title: Another sample
+tags: [jekyll, syntax]
 categories:
 - blog
 ---
