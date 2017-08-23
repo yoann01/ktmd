@@ -17,9 +17,6 @@ business management, production, online games, and much more. We post a fresh GD
 Subscribe to the channel to stay on top of regular updates, and check out GDC Vault for thousands 
 of more in-depth talks from our archives.
 
-
-GDC talks cover a range of developmental topics including game design, programming, audio, visual arts, business management, production, online games, and much more. We post a fresh GDC video every weekday. Subscribe to the channel to stay on top of regular updates, and check out GDC Vault for thousands of more in-depth talks from our archives.
-
 [Follow us on Twitter ](https://twitter.com/Official_GDC)
 
 Check out our Facebook page for GDC exclusives
