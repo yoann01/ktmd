@@ -7,7 +7,7 @@ categories:
 ---
 # PBR Spec/Rough and Rough/Metal Workflow
 
-{% include image name="https://www.marmoset.co/wp-content/uploads/2014/01/metalness02.jpg" caption=" blah " %}
+![](https://www.marmoset.co/wp-content/uploads/2014/01/metalness02.jpg)
 
 ## Metal Rough Worfkow
 
