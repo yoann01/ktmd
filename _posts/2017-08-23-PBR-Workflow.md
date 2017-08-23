@@ -1,7 +1,7 @@
 ---
 layout: post
 title: physically based Rendering texturing workflow
-tags: [jekyll, syntax]
+tags: [PBR, Materials]
 categories:
 - blog
 ---
