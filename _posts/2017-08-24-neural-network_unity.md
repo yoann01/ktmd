@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Neural Network Ambient Occlusion for Unity via @_kzr
-tags: [jekyll, syntax]
+tags: [UNITY, Neural network]
 categories:
 - blog
 ---
