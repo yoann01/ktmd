@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: PBR workflow
 tags: [code, jekyll]
@@ -27,7 +27,7 @@ Tells the shader if something is metal or not. Raw Metal = 1.0 white and non met
 
 >  With **metal/rough**, the areas indicated as metal in the metallic map have a corresponding metal reflectance value in the base color map. The metal reflectance value in the base color needs to be a measured real-world value. Transitional areas in the metal map (not raw metal 1.0 white) need to have the metal reflectance value lowered to indicate that its reflectance value is not raw metal.
 
-Also, with metal/rough, you only have control over metal reflectance values. The dielectric values are set to 0.04 or 4% which is most dielectric materials. The dielectric is hard-coded by the shader and you don�t need to set it in Substance. Some shaders add a specular control that allows you to change the fresnel reflectance value at 0 degrees.
+Also, with metal/rough, you only have control over metal reflectance values. The dielectric values are set to 0.04 or 4% which is most dielectric materials. The dielectric is hard-coded by the shader and you don’t need to set it in Substance. Some shaders add a specular control that allows you to change the fresnel reflectance value at 0 degrees.
 
 
 ## Specular Glossiness Workflow
