@@ -7,7 +7,7 @@ categories:
 ---
 # PBR Spec/Rough and Rough/Metal Workflow
 
-![test image size](https://www.marmoset.co/wp-content/uploads/2014/01/metalness02.jpg){:class="img-responsive"}
+![test image size](https://meshlogic.github.io/posts/blender/materials/nodes-pbr-basic-shader/pbr_maps.png)
 
 ## Metal Rough Worfkow
 
