@@ -7,9 +7,9 @@ categories:
 ---
 # PBR Spec/Rough and Rough/Metal Workflow
 
-![test image size](https://meshlogic.github.io/posts/blender/materials/nodes-pbr-basic-shader/pbr_maps.png)
-
 ## Metal Rough Worfkow
+
+![test image size](https://meshlogic.github.io/posts/blender/materials/nodes-pbr-basic-shader/pbr_maps.png)
 
 ### Base Color
 
