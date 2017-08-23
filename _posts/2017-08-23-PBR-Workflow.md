@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Another sample
+title: physically based Rendering texturing workflow
 tags: [jekyll, syntax]
 categories:
 - blog
