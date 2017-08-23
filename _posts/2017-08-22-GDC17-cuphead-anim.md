@@ -5,7 +5,7 @@ tags: [GDC, GAME]
 categories:
 - blog
 ---
-#Cuphead's Animation Process and Philosophy.
+# Cuphead's Animation Process and Philosophy.
 
 In this 2017 GDC bootcamp, Studio MDHR's Jake Clark explains his design and animation processes for the game Cuphead, 
 and shares practical ideas and tips for 2D animation.
