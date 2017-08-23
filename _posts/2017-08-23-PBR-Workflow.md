@@ -53,4 +53,4 @@ Normal map
 
 Thanks to:
 
-### Wes McDermott [allegorithmic ](https://www.allegorithmic.com/)
+ Wes McDermott [allegorithmic ](https://www.allegorithmic.com/)
