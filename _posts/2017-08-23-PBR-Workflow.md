@@ -5,8 +5,9 @@ tags: [code, jekyll]
 categories:
 - blog
 ---
-PBR Spec/Rough and Rough/Metal Workflow
----
+
+# PBR Spec/Rough and Rough/Metal Workflow
+
 ## Metal Rough Worfkow
 
 ### Base Color
