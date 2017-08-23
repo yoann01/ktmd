@@ -5,7 +5,7 @@ tags: [katana, python]
 categories:
 - blog
 ---
-python code snippets by honeyysharama https://github.com/honeyysharma/Katana
+python code snippets by [honeyysharama ](https://github.com/honeyysharma/Katana)
 
 > autoMtlStack.py
 
