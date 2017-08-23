@@ -36,6 +36,8 @@ Also, with metal/rough, you only have control over metal reflectance values. The
 
 ## Specular Glossiness Workflow
 
+{% include image name="linkedin-before.png" caption="Sharing my blog on LinkedIn" %}
+
 ### Diffuse 
 
 Raw color with no lighting information. Small amount of ambient occlusion can be baked in if using it for micro-surface occlusion. The color range for dark values should stay within 30-50 RGB. Never have dark values below 30 RGB. The brightest color value should not go above 240 RGB.
