@@ -1,9 +1,8 @@
 ﻿---
 layout: post
-title: Another sample
-tags: [jekyll, syntax]
+title: Sample post
+tags: [PBR, UE4, UNITY]
 categories:
 - blog
 ---
-
 
