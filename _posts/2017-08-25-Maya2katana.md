@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Katana autoMtl - autoSetExpression
-tags: [katana, python]
+title: maya2katana
+tags: [katana, python, maya]
 categories:
 - blog
 ---
