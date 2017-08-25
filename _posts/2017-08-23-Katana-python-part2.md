@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Katana autoMtl - autoSetExpression
+title: Katana Memo 
 tags: [katana, python]
 categories:
 - blog
