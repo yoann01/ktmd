@@ -43,15 +43,25 @@ myNode.setName('my_stackGS')
 {% highlight python %}
 #create node
 my_prman = NodegraphAPI.CreateNode('PrmanObjectStatment', root)
-
 #rename the node
 my_prman.setName('prman_OS')
-
 #put node in groupstack
-
+myNode.buildChildNode(my_prman)
 #check the child node available
+myNode.getChildren()
 {% endhighlight %}
-
 ---
 
+> Adjusting attributes using script
+{% highlight python %}
+root = NodegraphAPI.GetRootNode()
+my_prman = NodegraphAPI.CreateNode('PrmanGlobalStatement', root)
+en = my_prman.getParameter('args.prmanGlobalStatements.pixelVariance.enable')
+#enable assignement to True
+en.setValue(1,0)
+#Set pixel variance value to 2 at frame 0
+val = my_prman.getParameter('args.prmanGlobalStatements.pixelVariance.value')
+val.setValue(2,0)
+{% endhighlight %}
+---
 
