@@ -8,6 +8,7 @@ categories:
 
 > get the full list of al available node types
 
+Syntax highlighting with Solarized theme.
 {% highlight python %}
 nodetypes = NodegraphAPI.GetNodeTypes()
 nodetypes.sort()
