@@ -50,8 +50,8 @@ my_prman.setName('prman_OS')
 #put node in groupstack
 
 #check the child node available
-
 {% endhighlight %}
+
 ---
 
 
