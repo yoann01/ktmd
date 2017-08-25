@@ -13,7 +13,6 @@ nodetypes = NodegraphAPI.GetNodeTypes()
 nodetypes.sort()
 for nodetype in nodetypes:
     print(node)
-    
 {% endhighlight %}
 ---
 
