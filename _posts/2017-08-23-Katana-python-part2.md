@@ -7,7 +7,6 @@ categories:
 ---
 
 > get the full list of al available node types
-
 {% highlight python %}
 nodetypes = NodegraphAPI.GetNodeTypes()
 nodetypes.sort()
@@ -31,22 +30,28 @@ for nodetype in nodetypes:
 {% endhighlight %}
 ---
 
-> Create a groupStackNode and rename the node
-{% highlight python %}
-root = NodegraphAPI.GetRootNode()
-myNode = NodegraphAPI.CreateNode("GroupStack", root)
-{% endhighlight %}
----
-
 > Create a new GroupStack node at root location and rename it
 {% highlight python %}
 root = NodegraphAPI.GetRootNode()
-my_node = NodeGraphAPI.CreateNode('GroupStack', root)
+my_node = NodegraphAPI.CreateNode('GroupStack', root)
 #rename the node
-myNode.setName('myStack')
+myNode.setName('my_stackGS')
 {% endhighlight %}
 ---
 
+> Create a new prmanObjectStatement node rename it and stack in my_stackGS
+{% highlight python %}
+#create node
+my_prman = NodegraphAPI.CreateNode('PrmanObjectStatment', root)
 
+#rename the node
+my_prman.setName('prman_OS')
+
+#put node in groupstack
+
+#check the child node available
+
+{% endhighlight %}
+---
 
 
