@@ -38,6 +38,15 @@ myNode = NodegraphAPI.CreateNode("GroupStack", root)
 {% endhighlight %}
 ---
 
+> Create a new GroupStack node at root location and rename it
+{% highlight python %}
+root = NodegraphAPI.GetRootNode()
+my_node = NodeGraphAPI.CreateNode('GroupStack', root)
+#rename the node
+myNode.setName('myStack')
+{% endhighlight %}
+---
+
 
 
 
