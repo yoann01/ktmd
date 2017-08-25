@@ -12,32 +12,32 @@ categories:
 nodetypes = NodegraphAPI.GetNodeTypes()
 nodetypes.sort()
 for nodetype in nodetypes:
-    print(node)
+    print(nodetype)
 {% endhighlight %}
 ---
 
 > Get help on packages
 {% highlight python %}
- help(NodegrapfAPI)
+ help(NodegraphAPI)
  help(Nodes3DAPI)
  help(UI4)
 {% endhighlight %}
 ---
 
-> Get help on classGroupStacjNode in module
+> Get help on classGroupStackNode in module
 {% highlight python %}
  NodegrapAPI.groupStack
- help(NodegrapAPI.groupStack.GroupStackNode)
+ help(NodegraphAPI.groupStack.GroupStackNode)
 {% endhighlight %}
 ---
 
 > Create a groupStackNode and rename the node
 {% highlight python %}
 root = NodegraphAPI.GetRootNode()
-myNode = nodegraphAPI.CreateNode("GroupStack", root)
+myNode = NodegraphAPI.CreateNode("GroupStack", root)
 {% endhighlight %}
 ---
 
 
 
- honeyysharma [Github](https://github.com/honeyysharma/Katana)
+
