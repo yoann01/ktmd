@@ -17,16 +17,17 @@ for nodetype in nodetypes:
 
 > Get help on packages
 {% highlight python %}
- help(NodegraphAPI)
- help(Nodes3DAPI)
- help(UI4)
+help(NodegraphAPI)
+help(Nodes3DAPI)
+help(UI4)
+help(UI4.Util)
 {% endhighlight %}
 ---
 
 > Get help on classGroupStackNode in module
 {% highlight python %}
- NodegrapAPI.groupStack
- help(NodegraphAPI.groupStack.GroupStackNode)
+NodegraphAPI.GroupStack
+help(NodegraphAPI.GroupStack.GroupStackNode)
 {% endhighlight %}
 ---
 
@@ -35,24 +36,24 @@ for nodetype in nodetypes:
 root = NodegraphAPI.GetRootNode()
 my_node = NodegraphAPI.CreateNode('GroupStack', root)
 #rename the node
-myNode.setName('my_stackGS')
+my_node.setName('my_stackGS')
 {% endhighlight %}
 ---
 
-> Create a new prmanObjectStatement node rename it and stack in my_stackGS
+> Create a new prmanObjectStatement node rename it and stack in my_stackGS (created above)
 {% highlight python %}
 #create node
-my_prman = NodegraphAPI.CreateNode('PrmanObjectStatment', root)
+my_prman = NodegraphAPI.CreateNode('PrmanObjectStatements', root)
 #rename the node
 my_prman.setName('prman_OS')
 #put node in groupstack
-myNode.buildChildNode(my_prman)
+my_node.buildChildNode(my_prman)
 #check the child node available
-myNode.getChildren()
+my_node.getChildren()
 {% endhighlight %}
 ---
 
-> Adjusting attributes using script
+> Adjusting attributes using script (may not work)
 {% highlight python %}
 root = NodegraphAPI.GetRootNode()
 my_prman = NodegraphAPI.CreateNode('PrmanGlobalStatement', root)
@@ -65,7 +66,7 @@ val.setValue(2,0)
 {% endhighlight %}
 ---
 
-> If the PrmanGlobalStatement alredy exist : 
+> If the PrmanGlobalStatements alredy exist : 
 {% highlight python %}
 #get the node 'PrmanGlobalStatement' and store it in my_prman
 myprman = NodeGraphAPI.GetNode('PrmanGlobalStatement')
@@ -75,29 +76,29 @@ myprman = NodeGraphAPI.GetNode('PrmanGlobalStatement')
 
 > Select Nodes and run this to get a list of selected nodes
 {% highlight python %}
-sel = NodeGraphAPI.GetAllSelectedNodes('')
+sel = NodegraphAPI.GetAllSelectedNodes()
 print(sel)
 {% endhighlight %}
 ---
 
 > Create a prmanGlobalStatement and use this to get child parameters of the node
 {% highlight python %}
-sel = NodeGraphAPI.GetNode('prmanGlobalStatement')
-for param in sel.getparameters().getChildren():
-    print(parm)
+sel = NodegraphAPI.GetNode('PrmanGlobalStatements')
+for p in sel.getParameters().getChildren():
+    print(p)
 {% endhighlight %}
 ---
 
 > Delete nodes
 {% highlight python %}
-sel = NodeGraphAPI.GetNode('prmanGlobalStatement')
+sel = NodegraphAPI.GetNode('PrmanGlobalStatements')
 sel.delete()
 {% endhighlight %}
 ---
 
 > Get list of locations
 {% highlight python %}
-list = ScenegrapManager.getActiveScenegrah().getSelectedLocations()
+list = ScenegraphManager.getActiveScenegraph().getSelectedLocations()
 print(list)
 {% endhighlight %}
 ---
