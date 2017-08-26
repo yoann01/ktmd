@@ -92,12 +92,14 @@ for param in sel.getparameters().getChildren():
 {% highlight python %}
 sel = NodeGraphAPI.GetNode('prmanGlobalStatement')
 sel.delete()
+{% endhighlight %}
 ---
 
 > Get list of locations
 {% highlight python %}
 list = ScenegrapManager.getActiveScenegrah().getSelectedLocations()
 print(list)
+{% endhighlight %}
 ---
 
 
