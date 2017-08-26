@@ -56,7 +56,7 @@ myNode.getChildren()
 {% highlight python %}
 root = NodegraphAPI.GetRootNode()
 my_prman = NodegraphAPI.CreateNode('PrmanGlobalStatement', root)
-en = my_prman.getParameter('args.prmanGlobalStatements.pixelVariance.enable')
+en = my_prman.getParameter('args.prmanGlobalStatement.pixelVariance.enable')
 #enable assignement to True
 en.setValue(1,0)
 #Set pixel variance value to 2 at frame 0
@@ -64,4 +64,43 @@ val = my_prman.getParameter('args.prmanGlobalStatements.pixelVariance.value')
 val.setValue(2,0)
 {% endhighlight %}
 ---
+
+> If the PrmanGlobalStatement alredy exist : 
+{% highlight python %}
+#get the node 'PrmanGlobalStatement' and store it in my_prman
+myprman = NodeGraphAPI.GetNode('PrmanGlobalStatement')
+#editing of the value is the same as above
+{% endhighlight %}
+---
+
+> Select Nodes and run this to get a list of selected nodes
+{% highlight python %}
+sel = NodeGraphAPI.GetAllSelectedNodes('')
+print(sel)
+{% endhighlight %}
+---
+
+> Create a prmanGlobalStatement and use this to get child parameters of the node
+{% highlight python %}
+sel = NodeGraphAPI.GetNode('prmanGlobalStatement')
+for param in sel.getparameters().getChildren():
+    print(parm)
+{% endhighlight %}
+---
+
+> Delete nodes
+{% highlight python %}
+sel = NodeGraphAPI.GetNode('prmanGlobalStatement')
+sel.delete()
+---
+
+> Get list of locations
+{% highlight python %}
+list = ScenegrapManager.getActiveScenegrah().getSelectedLocations()
+print(list)
+---
+
+
+
+
 
