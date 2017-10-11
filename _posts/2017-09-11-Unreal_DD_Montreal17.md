@@ -1,6 +1,3 @@
-
-
-
 ---
 layout: post
 title:  Unreal Engine Masterclass | Unreal Dev Day Montreal 2017
