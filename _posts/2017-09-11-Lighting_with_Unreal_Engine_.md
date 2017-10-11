@@ -5,7 +5,7 @@ tags: [Unreal Dev Day, GAME]
 categories:
 - blog
 ---
-# Paragon Character Texturing Pipeline
+# Lighting with Unreal Engine 
 
 The session by Lead Artist Jerome Platteaux will focus on the different ways to light a project in Unreal Engine and 
 covers the basics of Physically Based Rendering and how to choose between the forward and the deferred render. 
