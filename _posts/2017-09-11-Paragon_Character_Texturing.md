@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Paragon Character Texturing Pipeline | Unreal Dev Day Montreal 2017
+title:  Paragon Character Texturing | Unreal Dev Day Montreal 2017
 tags: [Unreal Dev Day, GAME]
 categories:
 - blog
