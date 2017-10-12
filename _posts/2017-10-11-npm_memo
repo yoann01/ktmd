@@ -1,0 +1,49 @@
+---
+layout: post
+title: npm Memo 
+tags: [npm, js]
+categories:
+- blog
+---
+
+> node version manager install
+<Git>
+  <summary>Git</summary>
+### Git install
+
+If you have `git` installed (requires git v1.7+):
+
+1. clone this repo in the root of your user profile
+  - `cd ~/` from anywhere then `git clone https://github.com/creationix/nvm.git .nvm`
+1. check out the latest version with `git checkout v0.33.5`
+1. activate nvm by sourcing it from your shell
+
+Now add these lines to your `~/.bashrc`, `~/.profile`, or `~/.zshrc` file to have it automatically sourced upon login:
+(you may have to add to more than one of the above files)
+
+```sh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
+<cURL>
+  <summary>cURL</summary>
+ ```sh
+ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
+ ```
+### cURL install (windows)
+> Get help on packages
+On the curl download page there's a link to the download wizard. Complete all the steps as follows:
+
+Select Type of Package: curl executable
+Select Operating System: Windows / Win32 or Win64
+Select for What Flavour: Generic
+Select which Win32 Version (only if you selected Windows / Win32 in step 2): Unspecified
+If you chose Windows / Win32 you should end up here, a page that links to http://www.paehl.com/open_source/?CURL_x.y.z (x.y.z will change as newer versions of curl are released). There you can click the first link ("Download WITHOUT SSL") or second link ("Download WITH SUPPORT SSL") for a zip file with curl.exe.
+
+If you chose Win64 you should end up on this page which should have direct download links from the https://curl.haxx.se website. These too contain only curl.exe.
+
+Finally, you can copy curl.exe into %windir% and it should become available on the command line.
+
+curl.exe is in the bin folder of the downloaded / extracted curl folder.
+---
