@@ -6,49 +6,45 @@ categories:
 - blog
 ---
 
-## Nodejs
-
-<details>
- <summary>Update nodejs</summary>
+Nodejs
+=================
+###Update Nodejs
+ 
 
  Find out which version of Node.js you are using:
- ```sh  
+```sh
  node --version
- ```
+```
  Find out which versions of Node.js you may have installed and which one of those you're currently using:
- ```sh
+```sh
  nvm ls
- ```
+```
  List all versions of Node.js available for installation:
- ```sh
+```sh
  nvm ls-remote
- ```
+```
  Apparently for Windows the command would be rather like this:
- ```sh
- nvm ls available
- ```
+```sh 
+nvm ls available
+```
  Assuming you would pick Node.js v8.1.0 for installation you'd type the following to install that version:
- ```sh
- nvm install 8.1.0
- ```
+```sh
+nvm install 8.1.0
+```
  You are then free to choose between installed versions of Node.js. So if you would need to use an older version like v4.2.0 you would   set it as the active version like this:
- ```sh
- nvm use 4.2
- ```
+```sh 
+nvm use 4.2
+```
 
  [update Node.js just using nvm ](https://davidwalsh.name/nvm)
  
-</details>
-
-
-## npm
-<details>
- <summary>Listing globally installed NPM packages and version</summary>
+Npm
+==================
+### Listing globally installed NPM packages and version
 
 ```sh
 npm list -g --depth=0
 ```
-
 ```sh
 C:\Users\paul.redman\AppData\Roaming\npm
 ├── bower@1.2.5
@@ -68,7 +64,7 @@ npm uninstall [<@scope>/]<pkg>[@<version>]... [-S|--save|-D|--save-dev|-O|--save
 
 aliases: remove, rm, r, un, unlink
 ```
-#Example:
+###Example:
 ```sh
 npm uninstall sax
 ```
@@ -77,13 +73,13 @@ In global mode (ie, with -g or --global appended to the command), it uninstalls 
 
 npm uninstall takes 3 exclusive, optional flags which save or update the package version in your main package.json:
 
--S, --save: Package will be removed from your dependencies.
+>- -S, --save: Package will be removed from your dependencies.
 
--D, --save-dev: Package will be removed from your devDependencies.
+>- -D, --save-dev: Package will be removed from your devDependencies.
 
--O, --save-optional: Package will be removed from your optionalDependencies.
+>- -O, --save-optional: Package will be removed from your optionalDependencies.
 
---no-save: Package will not be removed from your package.json file.
+>- --no-save: Package will not be removed from your package.json file.
 
 Further, if you have an npm-shrinkwrap.json then it will be updated as well.
 
@@ -98,11 +94,12 @@ npm uninstall node-tap --save-dev
 npm uninstall dtrace-provider --save-optional
 npm uninstall lodash --no-save
 ```
-</details>
 
-## node version manager (nvm)
-<details>
-  <summary>install</summary>
+
+Nvm ( node version manager )
+==================
+
+###install
 
   _Git install_
   If you have `git` installed (requires git v1.7+):
@@ -140,4 +137,6 @@ npm uninstall lodash --no-save
   - `nvm version`: Displays the current running version of NVM for Windows.
   - `nvm node_mirror <node_mirror_url>`: Set the node mirror.People in China can use *https://npm.taobao.org/mirrors/node/*
   - `nvm npm_mirror <npm_mirror_url>`: Set the npm mirror.People in China can use *https://npm.taobao.org/mirrors/npm/*
-</details>
+
+
+
