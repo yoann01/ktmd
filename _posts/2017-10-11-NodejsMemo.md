@@ -95,6 +95,12 @@ npm uninstall dtrace-provider --save-optional
 npm uninstall lodash --no-save
 ```
 
+##### NPM update pckgs
+```sh
+npm i -g npm-check-updates
+npm-check-updates -u
+npm install
+```
 
 Nvm ( node version manager )
 ==================
