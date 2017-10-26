@@ -42,6 +42,42 @@ Npm
 ==================
 ### Listing globally installed NPM packages and version
 
+##### Basic command
+
+```sh
+npm -v
+npm init # create package.json & add -y is yes to all requirements
+npm install # install all packages in package.json
+npm install <package> # install in package but not written in package.json
+npm install <package> --save-dev # install in modules only in develop dependencies
+npm install <package>  --save # install in modules in dependencies
+npm install <package>@<version> # install specific version of package
+npm cache clean # clear npm cache
+npm ls -g # list all modules installed globally
+npm ls #  list all modules locally
+npm list --depth 0 # list all npm modules with depth 0
+npm show <package> # show versions, maintainers
+npm outdated # show all outdated modules
+npm prune #removes "extraneous" packages. Extraneous packages are packages that are not listed on the parent package's dependencies list.
+
+```
+
+##### Range Syntax
+
+>- caret (^)
+Allows changes that do not modify the left-most non-zero digit in the [major, minor, patch] tuple. In other words, this allows patch and minor updates for versions 1.0.0 and above, patch updates for versions 0.X >=0.1.0, and no updates for versions 0.0.X.
+
+“express”: “^4.15.3” means it can upgrade to version 4.99.0. Basically anything before 5.0.0
+
+##### Update a package
+
+>- First find out your outdated packages by typing npm outdated
+
+>- Then update the package or packages that you want manually as npm update –save package_name
+
+
+
+
 ```sh
 npm list -g --depth=0
 ```
