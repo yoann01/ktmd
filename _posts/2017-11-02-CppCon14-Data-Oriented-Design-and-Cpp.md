@@ -1,10 +1,11 @@
 ---
 layout: post
-title: CppCon 2014: Mike Acton "Data-Oriented Design and C++"
-tags: [CppCon, PROGRAMING]
-categories: PROGRAMING
+title: CppCon2014, Data-Oriented Design and C++
+tags: [GDC, GAME]
+categories:
 - blog
 ---
+# CppCon 2014: Mike Acton "Data-Oriented Design and C++"
 
 {% include youtubePlayer.html id="rX0ItVEVjHc" %}
 
