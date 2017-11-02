@@ -5,7 +5,7 @@ tags: [GDC, GAME]
 categories:
 - blog
 ---
-# CppCon 2014: Mike Acton "Data-Oriented Design and C++"
+
 
 {% include youtubePlayer.html id="rX0ItVEVjHc" %}
 
