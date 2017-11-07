@@ -8,9 +8,9 @@ categories:
 
 
 # ES6/ES7 Syntax Refresh 
-######(Dont worry max i'll update this as soon as possible ^^)
+###### (Dont worry max i'll update this as soon as possible ^^)
 
-##let & const
+## let & const
  **ES6** introduce **let** and  **const** keywords are different way to create variable.
  
 >- **let** is use to create variable values.
@@ -32,7 +32,7 @@ console.log(myName);
 >If we change from **var** to **let** the console output will stay the     same, but if wer'e using **const** instead, a **TypeError** will be   returned.   
 What's happen is that we're trying to reassigned a variable, myName,    that is declared a **constant** to a new value.   
 
-##Arrow Functions
+## Arrow Functions
 
 A normal Javascript function look like this
 
@@ -71,7 +71,7 @@ printMyName('yoann');
 >>>yoann
 ```
 
-##Exports & Imports (Modules)
+## Exports & Imports (Modules)
 
 **person.js**
 
@@ -107,7 +107,7 @@ import * as bundled from './utility.js'
 *bundle.clean, bundle.baseData ...*
 
 
-##Classes
+## Classes
 
 **Basic class**
 ```js
@@ -154,7 +154,7 @@ const person = new Person();
 person.printMyName(); 
 ```
 
-##Classes, properties & methods
+## Classes, properties & methods
 
 **Properties**
 > properties are like " variables attached to classes/ objects"
