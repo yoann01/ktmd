@@ -6,9 +6,7 @@ categories:
 - blog
 ---
 
-
-# ES6/ES7 Syntax Refresh 
-###### (Dont worry max i'll update this as soon as possible ^^)
+### ES6/ES7 Syntax Refresh (Dont worry max i'll update this as soon as possible ^^)
 
 ## let & const
  **ES6** introduce **let** and  **const** keywords are different way to create variable.
