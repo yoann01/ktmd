@@ -8,7 +8,10 @@ categories:
 
 ### ES6/ES7 Syntax Refresh (Dont worry max i'll update this as soon as possible ^^)
 
+# ES6 Syntax
+
 ## let & const
+
  **ES6** introduce **let** and  **const** keywords are different way to create variable.
  
 >- **let** is use to create variable values.
@@ -27,7 +30,7 @@ console.log(myName);
 >>>Manu
 ```
 
->If we change from **var** to **let** the console output will stay the     same, but if wer'e using **const** instead, a **TypeError** will be   returned.   
+If we change from **var** to **let** the console output will stay the     same, but if wer'e using **const** instead, a **TypeError** will be   returned.   
 What's happen is that we're trying to reassigned a variable, myName,    that is declared a **constant** to a new value.   
 
 ## Arrow Functions
@@ -204,4 +207,87 @@ class Person extend Human{
 }
 const person = new Person();
 person.printMyName(); 
+```
+
+## Spread & Rest Operators (...)
+
+The **spread** operator is used to split up array elements **OR** object properties.      
+
+```js
+const newArray = [...oldArray, 1, 2]
+const newObject = {...oldObject, newProp:5}
+```
+
+The **rest** operator is used to merge a list of function arguments into an array.      
+
+```js
+function sortArgs(...args){
+  return args.sort()
+}
+
+```
+**Exemple**
+
+*spread operator with array*
+```js
+const numbers = [1, 2, 3];
+const newNumbers = [...numbers, 4, 5, 6]
+console.log(newNumbers );
+```
+```sh
+>>> [1, 2, 3, 4, 5, 6]
+```
+*spread operator with object*
+```js
+const Person = {
+  name = 'Max'
+};
+
+const newPerson = {
+...Person, 
+age: 28
+}
+console.log(newPerson );
+```
+*rest operator*
+
+```js
+const filter = (...args) => {
+  return args.filter(el=> el === 1);
+}
+console.log(filter(1, 2, 3));
+```
+```sh
+>>> [1]
+```
+
+## Destructuring
+
+> Easily **extract** array elements or objec properties  
+> and store them in variables.
+
+**Array** destructuring
+```js
+[a, b] = ['Hello', 'Max']
+console.log(a) //hello
+console.log(b) //Max
+```
+
+**Obect** destructuring
+```js
+{name} = {name: 'Max', age: 38]
+console.log(name) //Max
+console.log(age)  //Undefined
+```
+
+**Exemple**
+*Array destructuring*
+```js
+const numbers = [1, 2, 3];
+[num1, , num2] = numbers;
+console.log(num1, num3);
+```
+```sh
+>>> 1
+>>> 3
 ```
