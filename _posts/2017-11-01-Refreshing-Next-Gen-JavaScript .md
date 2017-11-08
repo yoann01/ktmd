@@ -6,9 +6,9 @@ categories:
 - blog
 ---
 
-### ES6/ES7 Syntax Refresh (Dont worry max i'll update this as soon as possible ^^)
+# ES6/ES7 Syntax
 
-## let & const
+## <i class="icon-bookmark-empty"></i> let & const.
 
  **ES6** introduce **let** and  **const** keywords are different way to create variable.
  
@@ -28,10 +28,10 @@ console.log(myName);
 >>>Manu
 ```
 
-If we change from **var** to **let** the console output will stay the     same, but if wer'e using **const** instead, a **TypeError** will be   returned.   
-What's happen is that we're trying to reassigned a variable, myName,    that is declared a **constant** to a new value.   
+If we change from **var** to **let**, the console output will stay the     same, but if wer'e using **const** a **TypeError** will be   returned.   
+What's happen is that we're trying to reassigned a variable, myName,    that is declared as **constant** to a new value.   
 
-## Arrow Functions
+## <i class="icon-bookmark-empty"></i> Arrow Functions.
 
 A normal Javascript function look like this
 
@@ -46,7 +46,8 @@ const myFunc = (args) => {
 ...
 }
 ```
-**Exemple**
+***
+<i class="icon-right-circled"></i>  **Exemple**
 
 Normal function
 ```js
@@ -69,8 +70,10 @@ printMyName('yoann');
 ```sh
 >>>yoann
 ```
+***
 
-## Exports & Imports (Modules)
+
+## <i class="icon-bookmark-empty"></i> Exports & Imports (Modules).
 
 **person.js**
 
@@ -106,7 +109,7 @@ import * as bundled from './utility.js'
 *bundle.clean, bundle.baseData ...*
 
 
-## Classes
+## <i class="icon-bookmark-empty"></i> Classes.
 
 **Basic class**
 ```js
@@ -126,8 +129,8 @@ console.log(myPerson.name)
 ```js
 class Person extends Master
 ```
-
-**Exemple**
+***
+<i class="icon-right-circled"></i>   **Exemple**
 
 ```js
 class Human{
@@ -152,11 +155,12 @@ class Person extend Human{
 const person = new Person();
 person.printMyName(); 
 ```
+***
 
-## Classes, properties & methods
+## <i class="icon-bookmark-empty"></i> Classes, properties & methods.
 
 **Properties**
-> properties are like " variables attached to classes/ objects"
+> <i class="icon-info-circled"></i> Properties are like " variables attached to classes/ objects"
 
 ES6
 ```js
@@ -170,7 +174,7 @@ myProperty = 'value'
 ```
 ****
 **Methods**
->Methos are like "function attached to classes/ ojects"
+> <i class="icon-info-circled"></i> Methods are like "function attached to classes/ ojects"
 
 
 ES6
@@ -184,8 +188,9 @@ ES7
 myMethod = () => {...}
 }
 ```
+***
 
-**Exemple**
+<i class="icon-right-circled"></i>  **Exemple**
 
 ```js
 class Human{
@@ -206,8 +211,9 @@ class Person extend Human{
 const person = new Person();
 person.printMyName(); 
 ```
+***
 
-## Spread & Rest Operators (...)
+## <i class="icon-bookmark-empty"></i> Spread & Rest Operators.
 
 The **spread** operator is used to split up array elements **OR** object properties.      
 
@@ -224,9 +230,10 @@ function sortArgs(...args){
 }
 
 ```
-**Exemple**
+***
+<i class="icon-right-circled"></i>   **Exemple**
 
-*spread operator with array*
+##### spread operator with array
 ```js
 const numbers = [1, 2, 3];
 const newNumbers = [...numbers, 4, 5, 6]
@@ -235,7 +242,7 @@ console.log(newNumbers );
 ```sh
 >>> [1, 2, 3, 4, 5, 6]
 ```
-*spread operator with object*
+##### spread operator with object
 ```js
 const Person = {
   name = 'Max'
@@ -247,7 +254,7 @@ age: 28
 }
 console.log(newPerson );
 ```
-*rest operator*
+##### rest operator
 
 ```js
 const filter = (...args) => {
@@ -258,28 +265,29 @@ console.log(filter(1, 2, 3));
 ```sh
 >>> [1]
 ```
-
-## Destructuring
+***
+## <i class="icon-bookmark-empty"></i> Destructuring.
 
 > Easily **extract** array elements or objec properties  
 > and store them in variables.
 
-**Array** destructuring
+#####  **Array** destructuring
 ```js
 [a, b] = ['Hello', 'Max']
 console.log(a) //hello
 console.log(b) //Max
 ```
 
-**Obect** destructuring
+#####  **Obect** destructuring
 ```js
 {name} = {name: 'Max', age: 38]
 console.log(name) //Max
 console.log(age)  //Undefined
 ```
+***
 
-**Exemple**
-*Array destructuring*
+<i class="icon-right-circled"></i>  **Exemple**
+##### Array destructuring
 ```js
 const numbers = [1, 2, 3];
 [num1, , num2] = numbers;
@@ -288,4 +296,59 @@ console.log(num1, num3);
 ```sh
 >>> 1
 >>> 3
+```
+***
+
+## <i class="icon-bookmark-empty"></i> References & primitive Types.
+*Nothing new but super important*
+
+##### Primitive
+```js
+const number = 1;	//primitive type
+const num2 = number;	//Copy of number
+
+console.log(num2);
+```
+##### References 
+```js
+const person=  {
+  name: 'Max'
+};
+const secondPerson = person;  //reference ("pointer") to person object.
+
+person.name = 'yoann';
+console.log(secondPerson );
+```
+```sh
+>>> yoann
+```
+> <i class="icon-info-circled"></i>if we want to copy the object we can use the spread operator
+
+##### Spread 
+```js
+const person=  {
+  name: 'Max'
+};
+const secondPerson = {
+  ...person
+};
+
+person.name = 'yoann';
+console.log(secondPerson );
+```
+
+## <i class="icon-bookmark-empty"></i> Refreshing Array Function.
+
+```js
+const number = [1, 2, 3];
+
+const doubleNumberArray = number.map( (num) => {
+  return num * 2;
+});
+console.log(number );
+console.log(doubleNumberArray );
+```
+```sh
+>>> [1, 2, 3]
+>>> [2, 4, 6]
 ```
