@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Houdini Python/VEX
+title:  Houdini VEX
 tags: [Houdini, Vex]
 categories:
 - blog
 ---
 
-##DOP Random Air Resistance
+## DOP Random Air Resistance
 
 This one-liner will simply add random air resistance per particle within the minimum and maximum values 
 
@@ -15,7 +15,7 @@ This one-liner will simply add random air resistance per particle within the min
 
 ```
 
-##DOP Random Spin
+## DOP Random Spin
 
 This adds random spin to particles – put it in the popspin DOP 
 
@@ -25,7 +25,7 @@ axis = rand(@id) - set(0.5, 0.5, 0.5);
 spinspeed *= fit01(rand(@id+0.1), ch("Min"), ch("Max"));
 ```
 
-##SOP Fake Collisions Wrangle
+## SOP Fake Collisions Wrangle
 
 This fella will push points within a volume outside of the volume. Pipe the collision SDF into the second input.
 ```c
@@ -36,7 +36,7 @@ float dist = volumesample(1, 0, @P);
 
 ```
 
-##SOP Delete Points by Threshold
+## SOP Delete Points by Threshold
 
 This snippet will delete random points based on the threshold slider. Taken from http://www.tokeru.com 
 ```c
@@ -45,7 +45,7 @@ if ( rand(@ptnum) > ch('threshold') ) {
 }
 ```
 
-##SOP Create Lines Network
+## SOP Create Lines Network
 
 This snippet will create a network of lines based on distance threshold. Taken from Entagma’s “Creating Geo With Vex”  video 
 ```c
@@ -61,7 +61,7 @@ foreach(int pnt; nearpnts){
     }
 ```
 
-##SOP Random pscale with Ramp, Seed, Min and Max
+## SOP Random pscale with Ramp, Seed, Min and Max
 
 This useful little dude will create a ramp that can be used with minimum, maximum and seed values to generate random pscale values with weighting.
 ```c
@@ -76,7 +76,7 @@ float rand = fit01(random(@ptnum+311),0,angle);
 p@rot = quaternion(radians(rand), v@up);
 ```
 
-##SOP Rotation Wrangle
+## SOP Rotation Wrangle
 
 This guy will enable randomised rotations on particles. Add a time variable ($T/$F) into the angle input to get them moving.
 ```c
@@ -88,7 +88,7 @@ vector axis = sample_direction_uniform(rand(@ptnum*ch('seed')));
 @orient = quaternion(angle, axis);
 ```
 
-##SOP Spiral Curve
+## SOP Spiral Curve
 
 Makes input curve into a spiral with controls
 ```c
