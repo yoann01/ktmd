@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  Houdini Python
-tags: [Houdini, Vex]
+tags: [Houdini, Python]
 categories:
 - blog
 ---
 
-##Centre Pivots
+## Centre Pivots
 
 Sets pivot transforms to $CEX, $CEY, $CEZ on selected nodes
 ```py
@@ -21,7 +21,7 @@ for nodes in sel:
 
 ```
 
-##Find/Replace Parameter Expression
+## Find/Replace Parameter Expression
 
 Will find/replace strings within selected nodes’ parameters’ expressions
 ```py
@@ -52,7 +52,7 @@ if dialog[0] == 0:
         
 ```
 
-##Match Parameters
+## Match Parameters
 
 Select two nodes and this script will copy all parameters from the first selected node to the second selected
 ```py
@@ -98,7 +98,7 @@ def matchParams():
 matchParams()
 ```
 
-##Toggle Update Mode
+## Toggle Update Mode
 
 This script will toggle between Manual and Auto Update modes
 ```py
@@ -108,7 +108,7 @@ else:
     hou.ui.setUpdateMode(hou.updateMode.AutoUpdate)
 ```
 
-##Set Camera Parameters
+## Set Camera Parameters
 
 A short example to set all camera parameters – specifically resolution and icon scale
 ```py
