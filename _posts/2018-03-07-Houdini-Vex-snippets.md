@@ -68,7 +68,7 @@ This useful little dude will create a ramp that can be used with minimum, maximu
 @pscale = fit01(chramp("Width", rand(@id  + ch("Seed"))), ch("Min"), ch("Max"));
 ```
 
-##SOP Random Rotation Wrangle
+## SOP Random Rotation Wrangle
 A basic random rotation wrangle
 ```c
 float angle = ch("rot_amount");
