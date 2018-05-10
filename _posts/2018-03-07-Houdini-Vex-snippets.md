@@ -6,6 +6,24 @@ categories:
 - blog
 ---
 
+## Vex Split string
+
+prim wrangler > partition
+
+Prim wrangler
+```c
+//s[]@a = split(s@shop_materialPath, "_");
+//@a[-1]
+sting bars[] = split(s@shop_materialPath, "_");
+s@MatGrpName = bars[-1]
+```
+partition (will give primitive groups)
+```c
+part_`@matGrpName`
+```
+Material
+Group -> part_wood
+
 ## DOP Random Air Resistance
 
 This one-liner will simply add random air resistance per particle within the minimum and maximum values 
