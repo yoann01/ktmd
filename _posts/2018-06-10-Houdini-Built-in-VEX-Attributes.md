@@ -7,7 +7,7 @@ categories:
 ---
 
 ### General
-type name description
+```C
 int @ptnum Point Number
 int @numpt Total number of points
 float @Time Current time, in seconds
@@ -17,8 +17,10 @@ int @primnum Primitive Number
 int @numprim Total number of primitives
 int @vtxnum Vertex number
 int @numvtx Total number of vertices
+```
 
 ### Geometry
+```C
 vec3 @P Point/Primitive Position
 vec3 @N Point/Primitive/Vertex Normal
 vec3 @v Velocity (e.g. for motion blur / in particle systems)
@@ -35,8 +37,10 @@ vec3 @rest Rest position
 vec3 @force Force (e.g. acting on particle)
 float @age Particle Age
 float @life Max. Particle Life
+```
 
 ### Volumes
+```C
 float @density Density of voxel
 int @ix, @iy, @iz Voxel indices along each axis. Ranging from 0 to resolution-1
 vec3 @center Center of current Volume
@@ -46,8 +50,10 @@ vec3 @dPdx Change in position to get from one voxel to the next in x direction
 vec3 @dPdy Change in position to get from one voxel to the next in y direction
 vec3 @dPdz Change in position to get from one voxel to the next in z direction
 vec3 @BB relative position inside bounding box. Ranging from {0,0,0} to {1,1,1}
+```
 
 ### Shading
+```C
 vec3 @Cd Diffuse Color
 float @Alpha Alpha transparency
 vec3 @uv Point/Vertex UV coordinates
@@ -59,9 +65,10 @@ float @rough Roughness
 float @fresnel Fresnel coefficient
 float @shadow Shadow intensity
 float @sbias Shadow bias
+```
 
 ### Used As Instancing Point Attribute in Copy-To-Point-SOP
-type name description
+```C
 vec3 @P Instance Position
 float @pscale Uniform scale
 vec3 @scale Non-Uniform scale
@@ -73,3 +80,4 @@ vec3 @v Velocity (motion blur, also used as +Z axis of the copy if no orient or 
 vec3 @trans Translation of instance
 matrix @transform Transformation matrix (used e.g. in Copy-SOP)
 vec3 @pivot Local pivot point for instance
+```
