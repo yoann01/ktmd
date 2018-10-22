@@ -1,6 +1,6 @@
 ---
 layout: post
-title: C++ intro 
+title: C++ introtr 
 tags: [C++]
 categories:
 - blog
