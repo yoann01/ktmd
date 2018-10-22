@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Cpp Numeric Limits
+title: C++ Numeric Limits
 tags: [C++]
 categories:
 - blog
 ---
+
 
 
 # Numeric Limits
