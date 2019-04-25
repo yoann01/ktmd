@@ -18,7 +18,7 @@ geo = node.geometry()
 
 for prim in geo.prims():
     path = prim.attribValue("path")
-    newpath = path[:9]
+    newpath = path[:path.rfind("/")]
     prim.setAttribValue("path", newpath)
 
 ```
