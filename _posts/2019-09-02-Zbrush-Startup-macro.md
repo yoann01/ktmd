@@ -1,19 +1,16 @@
 ---
 layout: post
-title: Zbrush startup macros
+title: Zbrush startup macro
 tags: [Zbrush]
 categories:
 - blog
 ---
 
-ZBrush Startup macro
-===================
-
 > - Create a text file in the folowing folder **C:\Program Files (x86)\Pixologic\ZBrush 4R7\ZStartup\Macros\Misc**
-> - Call it whatever you want (mine is yg_setupMacro.txt)
+> - Call it whatever you want (mine is yg_setupMacro.txt :shipit:)
 > - copy and past the following code
 
-```
+```javascript
 //ZBRUSH MACRO - Recorded in ZBrush version 4.73
 [IButton,???,"Zbrush custom startup macros.",
 [IShowActions,0]
