@@ -10,7 +10,7 @@ categories:
 > - Call it whatever you want (mine is yg_setupMacro.txt :shipit:)
 > - copy and past the following code
 
-```javascript
+```js
 //ZBRUSH MACRO - Recorded in ZBrush version 4.73
 [IButton,???,"Zbrush custom startup macros.",
 [IShowActions,0]
