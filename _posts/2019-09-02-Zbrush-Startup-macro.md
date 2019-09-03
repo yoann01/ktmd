@@ -30,12 +30,14 @@ categories:
 [ISet,Preferences:QuickSave:Rest Duration,5]
 
 [IPress,Render:Render Properties:WaxPreview]
-[ISet,Render:Preview Wax :Strength,0.30]
+[ISet,Render:Preview Wax :Strength,0.65]
 [ISet,Render:Preview Wax :Temperature,7]
 [IPress,Render:Render Properties:Shadows]
 
 [IPress,Tool:Sphere3D]
+
 [IPress,Material:BasicMaterial]
+[ISet,Material:Wax Modifiers:Strength,55]
 
 [ISet,Draw:Angle of View,27]
 
