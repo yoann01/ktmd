@@ -15,32 +15,39 @@ categories:
 [IButton,???,"Zbrush custom startup macros.",
 [IShowActions,0]
 [IConfig,4.73]
- 
+
+// Set Document Backgroung/size
 [ISet,Document:Rate,0]
 [ISet,Document:Width,2046]
 [IPress,Document:Resize]
 
+// Turn Off Spotlight projection
 [IUnPress,Brush:Samples:Spotlight Projection]
 
+// Configure LightBox
 [IUnPress,Preferences:Lightbox:Open At Launch]
 [ISet,Preferences:Lightbox:Glow Brightness,0]
 [ISet,Preferences:Lightbox:Glow Opacity,0]
 
+// Set Quicksave options
 [ISet,Preferences:QuickSave:Maximum Duration,40]
 [ISet,Preferences:QuickSave:Rest Duration,5]
 
+// Set Base material
+[IPress,Material:BasicMaterial]
+[IColorSet,128,128,128]
+[ISet,Material:Wax Modifiers:Strength,55]
+[ISet,Material:Modifiers:Ambient,0]
+[ISet,Material:Modifiers:Specular,20]
+
+// ACtivate wax preview
 [IPress,Render:Render Properties:WaxPreview]
 [ISet,Render:Preview Wax :Strength,0.65]
 [ISet,Render:Preview Wax :Temperature,7]
 [IPress,Render:Render Properties:Shadows]
 
 [IPress,Tool:Sphere3D]
-
-[IPress,Material:BasicMaterial]
-[ISet,Material:Wax Modifiers:Strength,55]
-
 [ISet,Draw:Angle of View,27]
-
 [IPress,Brush:ClayTubes]
 [ISet,Alpha:Modify:Blur,2]
 [ISet,Stroke:Roll Dist,5]
