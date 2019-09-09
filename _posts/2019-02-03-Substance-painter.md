@@ -14,6 +14,10 @@ In this video we take a look at the new layer and mask referencing system with A
 In this video you will learn about using Anchor Points and Generators.
 {% include youtubePlayer.html id="LCud1p6lnCI" %}
 
+In this video we take a look at the Anchor system and using Micro Details in generators.
+Project files available on Substance Academy: https://tutorials.allegorithmic.com/c...
+{% include youtubePlayer.html id="w44yuMFtFyM" %}
+
 
 ### Subsurface scattering
 In this video we look at using the new subsurface scattering shader.
