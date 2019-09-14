@@ -6,6 +6,9 @@ categories:
 - blog
 ---
 
+
+# Basic
+
 ```
 HOM houdini object model
 shelfTools 
@@ -84,6 +87,44 @@ in the shell:
 1.2
 >>> 
 ```
+
+```sh
+>>> geo=hou.node('/obj/geo1')
+>>> box = geo.createNode('box')
+>>> t1 = geo.createNode('xform')
+>>> t1.moveToGoodPosition()
+<hou.Vector2 [0, 0]>
+>>> t1.setInput(0, box)
+>>> t1.parm('tx').set(1)
+>>> t2 = box.createOutputNode('xform')
+>>> t2.parm('tx').set(-1)
+>>> m = geo.createNode('merge')
+>>> m.moveToGoodPosition()
+<hou.Vector2 [0, 0]>
+>>> m.setNextInput(t1)
+>>> m.setNextInput(t2)
+>>> m.setDisplayFlag(1)
+>>> m.setRenderFlag(1)
+>>> m.createOutputNode('null')
+>>> m.setName('OUT_TEST')
+>>> m.outputs()
+>>> m.inputs()
+>>> m.inputs()[0]
+```
+
+add a materialBuilder in **shop** context
+
+```sh
+>>> n1 = hou.node('/shop/vopmaterial1/lambert1')
+>>> 
+>>> n2 = hou.node('/shop/vopmaterial1/surface_output')
+>>> n2.setInput(4, n1, 2)
+>>> n2.setNamedInput('Cf', n1, 'clr')
+>>> n1.inputNames()
+('nN', 'nI', 'Kd', 'diff', 'facefwd')
+>>> n2.setNamedInput('Cf', n1, 1
+```
+
 
 
 
