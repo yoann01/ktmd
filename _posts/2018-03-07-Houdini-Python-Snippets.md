@@ -1,41 +1,23 @@
 ---
 layout: post
-title:  Houdini Python
+title:  Houdini HOM 
 tags: [Houdini, Python]
 categories:
 - blog
 ---
 
 
-# Basic
-
-```
-HOM houdini object model
-shelfTools 
-Expressions
-Pipeline
-PythonSOP
-New Operator Type
-Assets
-Callbacks
-Houdini UI
-Python Panel 
-SOHO
-pre\post render script
-Mantra Filter
-```
-
-## HOM
+# HOM
 
 ### **Overview**
 
 The Houdini Object Model (HOM) is an application programming interface (API) that lets you get information from and control Houdini using the **Python scripting language**. 
 
-HOM replaces the functionality of Houdini’s previous scripting solutions, the **expression language** and **HScript**.
+HOM replaces the functionality of Houdiniâ€™s previous scripting solutions, the **expression language** and **HScript**.
 
+**Node Createtion**
 
-Open the python shell, create a geo sop.
-in the shell:
+>Open the python shell, create a geo sop in the shell enter:
 ```sh
 >>> hou.node('/obj/geo1')
 <hou.ObjNode of type geo at /obj/geo1>
@@ -65,7 +47,7 @@ in the shell:
 >>> obj.createNode('geo', run_init_script=0)
 
 ```
-
+**Node Parameter**
 ```sh
 >>> n = hou.node("/obj").createNode("geo")
 >>> n.setCurrent(1)
@@ -112,7 +94,9 @@ in the shell:
 >>> m.inputs()[0]
 ```
 
-add a materialBuilder in **shop** context
+**Connect nodes**
+
+>add a materialBuilder in **shop** context
 
 ```sh
 >>> n1 = hou.node('/shop/vopmaterial1/lambert1')
@@ -124,10 +108,90 @@ add a materialBuilder in **shop** context
 ('nN', 'nI', 'Kd', 'diff', 'facefwd')
 >>> n2.setNamedInput('Cf', n1, 1
 ```
+**Expressions**
+
+Create a platonic sop in obj context, then change form Hscript to python in the current sop panel.
+
+in Ry channel
+```python
+x = hou.ch('../null1/tx')*20
+y = float(hou.expandString('$F'))
+z = hou.pwd().outputs()[0].parm('ty').eval()*10
+return x+y
+```
 
 
+```sh
+>>> o = hou.parm('/obj/platonic1/tx')
+>>> o.setExpression('$F', language = hou.exprLanguage.Hscript)
+>>> 
+```
+
+**Python session**
+
+>Inside Python source editor
+
+```python
+x = hou.ch('../null1/tx')*20
+y = float(hou.expandString('$F'))
+z = hou.pwd().outputs()[0].parm('ty').eval()*10
+return x+y
+````
+
+```python
+def Test():
+    print("Test") 
+```
+>Inside python shell
+```py
+hou.session.test()
+```
+
+```python
+import hou
+
+def Action():
+    print("test")
+```
+>Add a button to the operator, then add a callbackscript
+
+```python
+hou.session.action()
+``` 
+**Scene Time**
+
+```sh
+>> hou.frame()
+46.0
+>>> hou.setFrame(55)
+>>> hou.frame()
+55.0
+>>> hou.time
+<function time at 0x000000003409BE48>
+>>> hou.time()
+2.25
+>>> hou.setTime(1)
+>>> hou.fps()
+24.0
+>>> 
+>>> hou.setFps(25)
+>>> hou.playbar
+<module 'hou.playbar'>
+>>> hou.playbar.playMode()
+playMode.Loop
+>>> hou.playbar.setPlayMode(hou.playMode.Once)
+>>> hou.playbar.play
+<bound method playbar.play of <module 'hou.playbar'>>
+>>> hou.playbar.setRealTime(1)
+>>>
+>>> hou.playbar.setPlaybackRange(1, 180) 
+>>> hou.hscript('tset `(1-1)/$FPS` `100/$FPS`')
+('', '')
+hou.hscript('tset `(%s-1)/$FPS` `%s/$FPS`' %(10, 20))
+```
 
 
 - [Python Scripting](https://www.sidefx.com/docs/houdini/hom/index.html)
 - [HOM Coockbook](https://www.sidefx.com/docs/houdini/hom/cb/index.html)
 - [hou package](https://www.sidefx.com/docs/houdini/hom/hou/index.html)
+
