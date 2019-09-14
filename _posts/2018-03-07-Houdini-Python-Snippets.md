@@ -6,125 +6,87 @@ categories:
 - blog
 ---
 
-## Centre Pivots
+```
+HOM houdini object model
+shelfTools 
+Expressions
+Pipeline
+PythonSOP
+New Operator Type
+Assets
+Callbacks
+Houdini UI
+Python Panel 
+SOHO
+pre\post render script
+Mantra Filter
+```
 
-Sets pivot transforms to $CEX, $CEY, $CEZ on selected nodes
-```py
-# Centre pivots
-import hou
+## HOM
 
-sel = hou.selectedNodes()
-for nodes in sel:
-    nodes.parm('px').setExpression('$CEX')
-    nodes.parm('py').setExpression('$CEY')
-    nodes.parm('pz').setExpression('$CEZ')
+### **Overview**
+
+The Houdini Object Model (HOM) is an application programming interface (API) that lets you get information from and control Houdini using the **Python scripting language**. 
+
+HOM replaces the functionality of Houdini’s previous scripting solutions, the **expression language** and **HScript**.
+
+
+Open the python shell, create a geo sop.
+in the shell:
+```sh
+>>> hou.node('/obj/geo1')
+<hou.ObjNode of type geo at /obj/geo1>
+>>> n = hou.node('/obj/geo1')
+>>> n.name() 
+'geo1'
+>>> n.setName('Object1')
+>>> t1 = n.createNode('xform')
+>>> t1.moveToGoodPosition()
+<hou.Vector2[0, 0]>
+>>> t1.destroy()
+```
+```sh
+>>> obj = hou.node('/obj')
+>>> obj 
+<hou.Node at /obj>
+>>> obj.createNode('geo')
+<hou.ObjNode of type geo at /obj/geo1>
+>>> n = hou.selectNodes() 
+>>> n
+<hou.ObjNode of type geo at /obj/geo1>
+>>> n.children()
+(<hou.SopNode of type file at /obj/geo1/file1>,)
+>>> for i in n.children():
+...     i.destryo()
+...
+>>> obj.createNode('geo', run_init_script=0)
 
 ```
 
-## Find/Replace Parameter Expression
-
-Will find/replace strings within selected nodes’ parameters’ expressions
-```py
-import hou
-
-sel = hou.selectedNodes()
-        
-dialog = hou.ui.readMultiInput('Find/Replace In Expression', input_labels=['Find: ', 'Replace: ',], buttons=("Find/Replace", "Cancel"),
-     severity=hou.severityType.ImportantMessage, title='Find/Replace', close_choice=1)
-
-find = dialog[1][0]
-replace = dialog[1][1]
-
-
-if dialog[0] == 0:
-    for n in sel:
-        for parms in n.parms():
-            try:
-                newString = str(parms.eval()).replace(find, replace)
-                parms.set(newString)
-            except:
-                print ''
-            try:
-                newExpression = str(parms.expression()).replace(find, replace)
-                parms.setExpression(newExpression)
-            except:
-                print ''
-        
+```sh
+>>> n = hou.node("/obj").createNode("geo")
+>>> n.setCurrent(1)
+>>> n.parm("tx")
+<hou.Parm tx in /obj/geo3>
+>>> tx=n.parm("tx")
+>>> tx.set(0.1)
+>>> tx.set(1)
+>>> tx.eval()
+1.0
+>>> tr = n.parmTuple("t")
+>>> tr
+<hou.ParmTuple t in /obj/geo3>
+>>> tr.set([1,1,1])
+>>> tr.set(hou.Vector3(1.2, 2.2, 1.0))
+>>> hou.parm("/obj/geo3/tx")
+<hou.Parm tx in /obj/geo3>
+>>> hou.ch("/obj/geo3/tx")
+1.2
+>>> 
 ```
 
-## Match Parameters
 
-Select two nodes and this script will copy all parameters from the first selected node to the second selected
-```py
-# --- This tool will match all parameters from the first selected node to the second.
-# --- good for copying ramps as well as the regular stuff.
 
-def matchParams():
-    import hou
-
-    value = 0
-    sel = hou.selectedNodes()
-
-    if len(sel) == 2:
-        source = sel[0]
-        dest = sel[1]
-        for param in source.parms():
-            sourceParm = param.name()  # source parameter
-            destParm = dest.parm(sourceParm)  # Destination parameter
-            try:
-                destParm.deleteAllKeyframes()
-            except:
-                value += 1
-            try:
-                sourceLanguage = param.expressionLanguage()
-                destParm.setExpression(param.expression(), language=sourceLanguage)
-
-            except:
-                value += 1
-            try:
-                destParm.set(param.eval())
-            except:
-                value += 1
-            try:
-                destParm.set(param.unexpandedString())
-            except:
-                value += 1
-
-            if param.isLocked() == 'True':
-                destParm.lock(on)
-    else:
-        print 'Select two nodes to match parameters'
-
-matchParams()
-```
-
-## Toggle Update Mode
-
-This script will toggle between Manual and Auto Update modes
-```py
-if hou.ui.updateMode() == hou.updateMode.AutoUpdate:
-    hou.ui.setUpdateMode(hou.updateMode.Manual)
-else:
-    hou.ui.setUpdateMode(hou.updateMode.AutoUpdate)
-```
-
-## Set Camera Parameters
-
-A short example to set all camera parameters – specifically resolution and icon scale
-```py
-import hou
-''' This script will set all cameras res to those determined below
-    and icon scale'''
-
-resx = "1920"
-resy = "1080"
-iconsize = "100"
-
-cameras = hou.nodeType(hou.objNodeTypeCategory(), "cam")
-cameras.instances()
-
-for cams in cameras.instances():
-    cams.parm("resx").set(resx)
-    cams.parm("resy").set(resy)
-    cams.parm("iconscale").set(iconsize)
-```
+- [Python Scripting](https://www.sidefx.com/docs/houdini/hom/index.html)
+- [HOM Coockbook](https://www.sidefx.com/docs/houdini/hom/cb/index.html)
+- [hou package](https://www.sidefx.com/docs/houdini/hom/hou/index.html)
