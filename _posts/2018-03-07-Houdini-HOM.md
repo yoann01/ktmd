@@ -15,9 +15,10 @@ The Houdini Object Model (HOM) is an application programming interface (API) tha
 
 HOM replaces the functionality of Houdiniâ€™s previous scripting solutions, the **expression language** and **HScript**.
 
-**Node Createtion**
+**Node Creation**
 
 >Open the python shell, create a geo sop in the shell enter:
+
 ```sh
 >>> hou.node('/obj/geo1')
 <hou.ObjNode of type geo at /obj/geo1>
@@ -110,7 +111,7 @@ HOM replaces the functionality of Houdiniâ€™s previous scripting solutions,
 ```
 **Expressions**
 
-Create a platonic sop in obj context, then change form Hscript to python in the current sop panel.
+> Create a platonic sop in obj context, then change form Hscript to python in the current sop panel.
 
 in Ry channel
 ```python
