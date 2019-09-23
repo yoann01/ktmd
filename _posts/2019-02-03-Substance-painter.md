@@ -18,12 +18,16 @@ In this video we take a look at the Anchor system and using Micro Details in gen
 Project files available on Substance Academy: https://tutorials.allegorithmic.com/c...
 {% include youtubePlayer.html id="w44yuMFtFyM" %}
 
+---
 
 ### Subsurface scattering
 In this video we look at using the new subsurface scattering shader.
 {% include youtubePlayer.html id="0GFE7Dxni2o" %}
 
+---
 
 ### Dynamic Strokes
 In this video, we take a look at how the dynamic stroke system works in Substance Painter 2019.1.
 {% include youtubePlayer.html id="0Vxne6fAOew" %}
+
+---
