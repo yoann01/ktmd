@@ -36,7 +36,7 @@ Marcus Nordenstam, Senior Bifrost Product Manager, introduces Bifrost Episode 1 
 
 In this new blog series, I will address common questions and useful tidbits of knowledge for Bifrost newbies. Of course – your first port of call should be the official Bifrost tutorials videos posted here on AREA, but there’s still a lot of low-hanging fruit to cover.
 
-[How-Tos for New Bifrosters - Part 1 \| The Maya Blog | AREA by Autodesk](https://area.autodesk.com/blogs/the-maya-blog/how-tos-for-new-bifrosts-part-1/)
+[How-Tos for New Bifrosters - Part 1 | The Maya Blog | AREA by Autodesk](https://area.autodesk.com/blogs/the-maya-blog/how-tos-for-new-bifrosts-part-1/)
 
 ---
 ## Bifrost Basic
