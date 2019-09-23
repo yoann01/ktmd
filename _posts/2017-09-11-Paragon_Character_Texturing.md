@@ -5,7 +5,6 @@ tags: [Unreal Dev Day, GAME]
 categories:
 - blog
 ---
-# Paragon Character Texturing Pipeline
 
 In this Unreal Dev Day Montreal presentation, Technical Artist Harrison Moore goes through the texturing pipeline used 
 on Paragon from start to finish, breaking down the steps and techniques the team uses to texture hyper-realistic characters in UE4.
