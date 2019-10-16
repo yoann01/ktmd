@@ -13,12 +13,9 @@ categories:
 
 ## Bifrost: Strands, Instancing and Visual Programming
 
-Jonah Friedman, Bifrost Product Owner, walks us through how he created the procedurally-generated, instanced strands in his cable car animation with Bifrost in Maya.
-
-He discusses using flowlines as an artistic tool, animating the strands, and explores Bifrost's render-time procedural with Arnold.
-
-
-[Bifrost: Strands, Instancing and Visual Programming on Vimeo](https://vimeo.com/355418791)
+<iframe src="https://player.vimeo.com/video/355418791" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/355418791">Bifrost: Strands, Instancing and Visual Programming</a> from <a href="https://vimeo.com/autodeskarea">Autodesk Media and Entertainment</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p>Jonah Friedman, Bifrost Product Owner, walks us through how he created the procedurally-generated, instanced strands in his cable car animation. He discusses using flowlines as an artistic tool, the animation process, and covers Bifrost as a render-time procedural.</p>
 
 ---
 
