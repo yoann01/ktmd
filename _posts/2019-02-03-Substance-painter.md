@@ -7,7 +7,7 @@ categories:
 ---
 
 
-### <span style="color:#444">Anchor Point</span>
+### <span style="color:#5aade0">Anchor Point</span>
 In this video we take a look at the new layer and mask referencing system with Anchor Points.
 {% include youtubePlayer.html id="q9mLZQKxPSo" %}
 
@@ -20,13 +20,13 @@ Project files available on Substance Academy: https://tutorials.allegorithmic.co
 
 ---
 
-### <span style="color:#444">Subsurface scattering </span>
+### <span style="color:#5aade0">Subsurface scattering </span>
 In this video we look at using the new subsurface scattering shader.
 {% include youtubePlayer.html id="0GFE7Dxni2o" %}
 
 ---
 
-### <span style="color:#444">Dynamic Strokes </span>
+### <span style="color:#5aade0">Dynamic Strokes </span>
 In this video, we take a look at how the dynamic stroke system works in Substance Painter 2019.1.
 {% include youtubePlayer.html id="0Vxne6fAOew" %}
 
