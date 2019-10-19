@@ -14,18 +14,14 @@ categories:
 ## Bifrost: Strands, Instancing and Visual Programming
 
 <iframe src="https://player.vimeo.com/video/355418791" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/355418791">Bifrost: Strands, Instancing and Visual Programming</a> from <a href="https://vimeo.com/autodeskarea">Autodesk Media and Entertainment</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-<p>Jonah Friedman, Bifrost Product Owner, walks us through how he created the procedurally-generated, instanced strands in his cable car animation. He discusses using flowlines as an artistic tool, the animation process, and covers Bifrost as a render-time procedural.</p>
+<p><a href="https://vimeo.com/355418791">Bifrost: Strands, Instancing and Visual Programming</a></p>
 
 ---
 
 ## Bifrost: Modular FX Framework
 
-Marcus Nordenstam, Senior Bifrost Product Manager, introduces Bifrost Episode 1 - the Bifrost Extension for Maya, supported by versions of Maya 2018 and up.
-
-[Modular FX Framework in Bifrost (featuring The Mill) on Vimeo](https://vimeo.com/355178027)
-
-[Aero, Combustion, and Adaptive Simulation with Bifrost on Vimeo](https://vimeo.com/355537392)
+<iframe src="https://player.vimeo.com/video/355178027" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/355178027">Modular FX Framework in Bifrost (featuring The Mill)</a></p>
 
 ---
 
