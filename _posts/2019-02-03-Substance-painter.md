@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Substance Painter
+title: 
 tags: [CG, Substance]
 categories:
 - blog
