@@ -5,6 +5,16 @@ tags: [CG, Substance]
 categories:
 - blog
 ---
+
+### <span style="color:#5aade0">Substance Designer ACES</span>
+
+I added ACES tonemapping to the Substance Designer viewport shader for closer parity with UE4 which uses ACES filmic tonemapping.
+Grab it from my git respository! (install instructions inside the readme) -
+
+[Github](https://github.com/Calvinatorr/SubstanceShaderUE)
+
+---
+
 ### <span style="color:#5aade0">ACES LUT</span>
 ![](https://cdnb.artstation.com/p/assets/images/images/017/800/081/original/brian-leleux-caveentryforest.gif?1557384883)
 
@@ -15,6 +25,7 @@ v2 includes a pre-transformation fix and a more accurate LUT for Epic's version 
 
 [Gumroad](https://gumroad.com/l/lHiVg)
 
+---
 
 ### <span style="color:#5aade0">Anchor Point</span>
 In this video we take a look at the new layer and mask referencing system with Anchor Points.
