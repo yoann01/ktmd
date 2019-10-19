@@ -6,11 +6,11 @@ categories:
 - blog
 ---
 
-Nodejs
-=================
-###Update Nodejs
- 
 
+
+## NODEjs
+
+**Update Nodejs**
  Find out which version of Node.js you are using:
 ```sh
  node --version
@@ -35,15 +35,15 @@ nvm install 8.1.0
 ```sh 
 nvm use 4.2
 ```
+[update Node.js just using nvm ](https://davidwalsh.name/nvm)
 
- [update Node.js just using nvm ](https://davidwalsh.name/nvm)
- 
-Npm
-==================
-### Listing globally installed NPM packages and version
+---
 
-##### Basic command
+## Npm
 
+**Listing globally installed NPM packages and version**
+
+Basic command
 ```sh
 npm -v
 npm init # create package.json & add -y is yes to all requirements
@@ -62,20 +62,18 @@ npm prune #removes "extraneous" packages. Extraneous packages are packages that 
 
 ```
 
-##### Range Syntax
+**Range Syntax**
 
 >- caret (^)
 Allows changes that do not modify the left-most non-zero digit in the [major, minor, patch] tuple. In other words, this allows patch and minor updates for versions 1.0.0 and above, patch updates for versions 0.X >=0.1.0, and no updates for versions 0.0.X.
 
 “express”: “^4.15.3” means it can upgrade to version 4.99.0. Basically anything before 5.0.0
 
-##### Update a package
+**Update a package**
 
 >- First find out your outdated packages by typing npm outdated
 
 >- Then update the package or packages that you want manually as npm update –save package_name
-
-
 
 
 ```sh
@@ -93,14 +91,14 @@ C:\Users\paul.redman\AppData\Roaming\npm
 ├── nodeunit@0.7.4
 └── yo@1.0.4
 ```
-_npm uninstall_
 
+**npm uninstall**
 ```sh
 npm uninstall [<@scope>/]<pkg>[@<version>]... [-S|--save|-D|--save-dev|-O|--save-optional|--no-save]
 
 aliases: remove, rm, r, un, unlink
 ```
-###Example:
+
 ```sh
 npm uninstall sax
 ```
@@ -131,17 +129,17 @@ npm uninstall dtrace-provider --save-optional
 npm uninstall lodash --no-save
 ```
 
-##### NPM update pckgs
+**NPM update pckgs**
 ```sh
 npm i -g npm-check-updates
 npm-check-updates -u
 npm install
 ```
+---
 
-Nvm ( node version manager )
-==================
+## Nvm ( node version manager )
 
-###install
+**install**
 
   _Git install_
   If you have `git` installed (requires git v1.7+):
@@ -163,9 +161,9 @@ Nvm ( node version manager )
 
   [NVM-windows](https://github.com/coreybutler/nvm-windows)
 
-  ## Usage
+**Usage**
 
-  NVM for Windows is a command line tool. Simply type `nvm` in the console for help. The basic commands are:
+NVM for Windows is a command line tool. Simply type `nvm` in the console for help. The basic commands are:
 
   - `nvm arch [32|64]`: Show if node is running in 32 or 64 bit mode. Specify 32 or 64 to override the default architecture.
   - `nvm install <version> [arch]`: The version can be a node.js version or "latest" for the latest stable version. Optionally specify whether to install the 32 or 64 bit version (defaults to system arch). Set `[arch]` to "all" to install 32 AND 64 bit versions.
