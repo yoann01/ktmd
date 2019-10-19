@@ -6,17 +6,17 @@ categories:
 - blog
 ---
 
-### <span style="color:#5aade0">Substance Designer ACES</span>
+### <span style="color:#5aade0">Designer ACES</span>
 ![](https://cdnb.artstation.com/p/assets/images/images/021/308/091/large/calvin-simpson-comparison.jpg)
 
-I added ACES tonemapping to the Substance Designer viewport shader for closer parity with UE4 which uses ACES filmic tonemapping.
+I added ACES tonemapping to the **Substance Designer** viewport shader for closer parity with UE4 which uses ACES filmic tonemapping.
 Grab it from my git respository! (install instructions inside the readme) -
 
 [Github](https://github.com/Calvinatorr/SubstanceShaderUE)
 
 ---
 
-### <span style="color:#5aade0">ACES LUT</span>
+### <span style="color:#5aade0">Painter ACES</span>
 ![](https://cdnb.artstation.com/p/assets/images/images/017/800/081/original/brian-leleux-caveentryforest.gif?1557384883)
 
 LUTs for **Substance Painter(v2.5 and newer)** with the **ACES RRT/ODT** to better match other renderers, one with the standard ODT for \
