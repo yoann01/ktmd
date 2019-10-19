@@ -7,6 +7,7 @@ categories:
 ---
 
 ### <span style="color:#5aade0">Substance Designer ACES</span>
+![](https://cdnb.artstation.com/p/assets/images/images/021/308/091/large/calvin-simpson-comparison.jpg)
 
 I added ACES tonemapping to the Substance Designer viewport shader for closer parity with UE4 which uses ACES filmic tonemapping.
 Grab it from my git respository! (install instructions inside the readme) -
