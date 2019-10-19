@@ -5,6 +5,15 @@ tags: [CG, Substance]
 categories:
 - blog
 ---
+### <span style="color:#5aade0">ACES LUT</span>
+![](https://cdnb.artstation.com/p/assets/images/images/017/800/081/original/brian-leleux-caveentryforest.gif?1557384883)
+
+LUTs for **Substance Painter(v2.5 and newer)** with the **ACES RRT/ODT** to better match other renderers, one with the standard ODT for \
+something like Unity and one specifically for UE4 and its modification of ACES.\ This has NO impact on your materials, this is strictly a viewport feature.
+
+v2 includes a pre-transformation fix and a more accurate LUT for Epic's version of ACES in Unreal Engine 4.\ Thanks Thomas Mansencal, Nick Shaw, and Jose Linares on **ACESCentral**.
+
+[Gumroad](https://gumroad.com/l/lHiVg)
 
 
 ### <span style="color:#5aade0">Anchor Point</span>
