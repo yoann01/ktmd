@@ -54,8 +54,7 @@ In this new blog series, I will address common questions and useful tidbits of k
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zRMAxnpR9EY" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://youtu.be/PSzS-6UEGHw" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PSzS-6UEGHw" frameborder="0" allowfullscreen></iframe>
 
 
 ---
