@@ -43,8 +43,7 @@ In this new blog series, I will address common questions and useful tidbits of k
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZmBWey9U8xU" frameborder="0" allowfullscreen></iframe>
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OkDoqTiyFKU" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zRMAxnpR9EY" frameborder="0" allowfullscreen</iframe>
 ---
 
 ## Quick Compounds
