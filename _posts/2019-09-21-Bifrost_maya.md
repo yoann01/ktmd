@@ -32,6 +32,7 @@ In this new blog series, I will address common questions and useful tidbits of k
 [How-Tos for New Bifrosters - Part 1 ](https://area.autodesk.com/blogs/the-maya-blog/how-tos-for-new-bifrosts-part-1/)
 
 ---
+
 ## Bifrost Basic
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_3-bKGZwdbQ" frameborder="0" allowfullscreen></iframe>
 
@@ -41,8 +42,7 @@ In this new blog series, I will address common questions and useful tidbits of k
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZmBWey9U8xU" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zRMAxnpR9EY" frameborder="0" allowfullscreen</iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zRMAxnpR9EY" frameborder="0" allowfullscreen></iframe>
 
 ---
 
@@ -55,7 +55,6 @@ In this new blog series, I will address common questions and useful tidbits of k
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zRMAxnpR9EY" frameborder="0" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PSzS-6UEGHw" frameborder="0" allowfullscreen></iframe>
-
 
 ---
 
